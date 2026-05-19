@@ -82,3 +82,107 @@ transform: rotate(180deg);
     transform: scale(1.0); /* Ensures correct scaling */
     background-color: #D4B0A0;
 }/* End custom CSS */
+/* Wedding Gift Section */
+.wedding-gift-section {
+  --display: flex;
+  --flex-direction: row;
+  --align-items: stretch;
+  --overflow: hidden;
+  --padding-top: 0px;
+  --padding-bottom: 0px;
+  --padding-left: 0px;
+  --padding-right: 0px;
+}
+
+@media(min-width:768px){
+  .wedding-gift-section {
+    --content-width: 450px;
+  }
+}
+
+.wedding-gift-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 30px 50px 30px;
+  background: linear-gradient(180deg, #6B2D2D 0%, #B8756A 100%);
+  width: 100%;
+}
+
+.wedding-gift-title {
+  font-family: "editors-light", Sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.wedding-gift-desc {
+  font-family: "Poppins", Sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 24px;
+  line-height: 1.7;
+}
+
+.bca-card {
+  background: linear-gradient(135deg, #f5f5f0 0%, #e8e4dc 40%, #d4cec5 100%);
+  border-radius: 18px;
+  border: 2px solid rgba(255,255,255,0.7);
+  box-shadow: 3px 3px 16px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.6);
+  padding: 18px 20px 14px 20px;
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+  min-height: 140px;
+}
+
+.bca-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.bca-number {
+  font-family: "Jura", Sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  color: #3a3a3a;
+  margin-bottom: 4px;
+}
+
+.bca-name {
+  font-family: "Jura", Sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  color: #3a3a3a;
+  margin-bottom: 10px;
+}
+
+.bca-copy-btn {
+  background: #A2A5A7;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  font-family: "Roboto", Sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 10px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px -3px rgba(0,0,0,0.5);
+  transition: background 0.2s;
+}
+
+.bca-copy-btn:hover {
+  background: #D9D9D9;
+  color: #333;
+}
