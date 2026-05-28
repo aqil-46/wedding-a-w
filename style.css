@@ -186,3 +186,8 @@ transform: rotate(180deg);
   background: #D9D9D9;
   color: #333;
 }
+/* Fix: Cover background image load fully without Elementor lazy load blocking */
+.elementor-8387 .elementor-element.elementor-element-4e12b283:not(.elementor-motion-effects-element-type-background),
+.elementor-8387 .elementor-element.elementor-element-4e12b283 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    background-image: url("https://hostings.42web.io/images/1779109167_WhatsApp%20Image%202026-05-16%20at%2015.48.34.jpeg") !important;
+}
